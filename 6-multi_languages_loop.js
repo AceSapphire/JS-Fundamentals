@@ -1,11 +1,11 @@
 const languages = ["C is fun", "Python is cool", "JavaScript is amazing"];
+const outputLines = [];
 let i = 0;
-let output = "";
+
 while (i < languages.length) {
-  output += languages [i];
-  if (i !== languages.lenght - 1) {
-    output += "\n";
+  outputLines.push(languages[i]);
+  i++;
 }
- i++;
-}
-console.log(output);
+
+console.log(outputLines.join('\n'));
+
